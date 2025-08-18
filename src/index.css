@@ -169,6 +169,64 @@
   /* Hero Gradient Text */
   .gradient-text {
     @apply bg-gradient-to-r from-secondary to-secondary-hover bg-clip-text text-transparent;
+    /* Better RTL support for Arabic text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Ensure proper text rendering in RTL */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* RTL-specific gradient text fixes */
+  [dir="rtl"] .gradient-text {
+    background: linear-gradient(to left, hsl(43 76% 53%), hsl(43 76% 48%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Better RTL text rendering */
+  [dir="rtl"] {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* RTL section title improvements */
+  [dir="rtl"] .font-display {
+    font-family: var(--font-arabic), serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* RTL text spacing improvements */
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
+    letter-spacing: 0.01em;
+    word-spacing: 0.05em;
+  }
+
+  /* RTL paragraph text improvements */
+  [dir="rtl"] p {
+    line-height: 1.8;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Arabic font loading improvements */
+  @font-face {
+    font-family: 'Amiri';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+  }
+
+  /* Ensure proper Arabic text rendering */
+  [dir="rtl"] {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
   }
 
   /* Premium Card */

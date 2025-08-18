@@ -47,7 +47,7 @@ const Achievements = () => {
             {t('achievements.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Measurable impact and recognition across operational excellence initiatives
+            {t('achievements.description')}
           </p>
         </div>
 
@@ -59,13 +59,13 @@ const Achievements = () => {
               className={`card-premium p-6 md:p-8 hover-lift animate-slide-in-left`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex items-start gap-6">
+              <div className="flex items-center gap-6">
                 <div className={`w-16 h-16 ${achievement.bgColor} rounded-2xl flex items-center justify-center flex-shrink-0`}>
                   <achievement.icon className={`w-8 h-8 ${achievement.color}`} />
                 </div>
                 
-                <div className="flex-1">
-                  <p className="text-lg text-foreground leading-relaxed">
+                <div className="flex-1 flex items-center justify-center">
+                  <p className="text-lg text-foreground leading-relaxed text-center">
                     {achievement.title}
                   </p>
                 </div>
@@ -84,10 +84,10 @@ const Achievements = () => {
             </div>
             
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 text-secondary">
-              ISO 9001 Certified Operations
+              {t('achievements.iso.title')}
             </h3>
             <p className="text-lg text-primary-foreground/80">
-              Maintaining zero violations while implementing world-class quality management systems
+              {t('achievements.iso.description')}
             </p>
           </div>
         </div>

@@ -43,7 +43,7 @@ const Navigation = () => {
       <div className="container-width">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center">
             <button
               onClick={() => scrollToSection('#home')}
               className="font-display font-bold text-xl gradient-text hover:scale-105 transition-transform duration-300"
@@ -58,7 +58,7 @@ const Navigation = () => {
               <button
                 key={item.key}
                 onClick={() => scrollToSection(item.href)}
-                className="text-sm font-medium text-foreground hover:text-secondary transition-colors duration-300 relative group"
+                className="text-sm font-medium text-foreground hover:text-secondary transition-colors duration-300 relative group flex items-center justify-center"
               >
                 {t(item.key)}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
@@ -73,7 +73,7 @@ const Navigation = () => {
               variant="outline"
               size="sm"
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-              className="hidden sm:flex items-center space-x-2 rtl:space-x-reverse border-border hover:border-secondary"
+              className="hidden sm:flex items-center justify-center space-x-2 rtl:space-x-reverse border-border hover:border-secondary"
             >
               <Globe className="w-4 h-4" />
               <span>{language === 'en' ? 'العربية' : 'English'}</span>
@@ -83,7 +83,7 @@ const Navigation = () => {
             <Button
               variant="ghost"
               size="sm"
-              className="lg:hidden"
+              className="lg:hidden flex items-center justify-center"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -99,7 +99,7 @@ const Navigation = () => {
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-foreground hover:text-secondary hover:bg-muted rounded-md transition-colors duration-300"
+                  className="block w-full text-center px-3 py-2 text-base font-medium text-foreground hover:text-secondary hover:bg-muted rounded-md transition-colors duration-300 flex items-center justify-center"
                 >
                   {t(item.key)}
                 </button>
@@ -110,7 +110,7 @@ const Navigation = () => {
                 variant="outline"
                 size="sm"
                 onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-                className="sm:hidden w-full mt-4 justify-center space-x-2 rtl:space-x-reverse"
+                className="sm:hidden w-full mt-4 justify-center space-x-2 rtl:space-x-reverse flex items-center"
               >
                 <Globe className="w-4 h-4" />
                 <span>{language === 'en' ? 'العربية' : 'English'}</span>

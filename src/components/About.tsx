@@ -51,24 +51,24 @@ const About = () => {
                 <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-premium-black">9+</span>
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">Years Experience</h4>
-                <p className="text-sm text-muted-foreground">Multi-sector leadership</p>
+                <h4 className="font-semibold text-foreground mb-2">{t('about.years')}</h4>
+                <p className="text-sm text-muted-foreground">{t('about.multiSector')}</p>
               </div>
 
               <div className="card-premium p-6 text-center hover-lift animate-scale-in" style={{ animationDelay: '0.4s' }}>
                 <div className="w-16 h-16 bg-gradient-navy rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary-foreground">3</span>
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">Countries</h4>
-                <p className="text-sm text-muted-foreground">KSA • Belgium • Kuwait</p>
+                <h4 className="font-semibold text-foreground mb-2">{t('about.countries')}</h4>
+                <p className="text-sm text-muted-foreground">{t('about.countriesList')}</p>
               </div>
 
               <div className="card-premium p-6 text-center hover-lift animate-scale-in" style={{ animationDelay: '0.6s' }}>
                 <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-premium-black">50%</span>
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">Cost Reduction</h4>
-                <p className="text-sm text-muted-foreground">Proven efficiency gains</p>
+                <h4 className="font-semibold text-foreground mb-2">{t('about.costReduction')}</h4>
+                <p className="text-sm text-muted-foreground">{t('about.efficiencyGains')}</p>
               </div>
             </div>
           </div>

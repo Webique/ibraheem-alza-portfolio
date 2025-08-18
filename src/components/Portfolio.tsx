@@ -12,24 +12,28 @@ const Portfolio = () => {
       period: t('portfolio.role1.period'),
       description: t('portfolio.role1.description'),
       current: true,
+      logo: null,
     },
     {
       title: t('portfolio.role2.title'),
       company: t('portfolio.role2.company'),
       period: t('portfolio.role2.period'),
       current: false,
+      logo: null,
     },
     {
       title: t('portfolio.role3.title'),
       company: t('portfolio.role3.company'),
       period: t('portfolio.role3.period'),
       current: false,
+      logo: '/overjar.png',
     },
     {
       title: t('portfolio.role4.title'),
       company: t('portfolio.role4.company'),
       period: t('portfolio.role4.period'),
       current: false,
+      logo: '/novell.jpeg',
     },
   ];
 
@@ -43,7 +47,7 @@ const Portfolio = () => {
               {t('portfolio.title')}
             </h2>
             <p className="text-xl text-muted-foreground">
-              Leadership roles across multiple sectors and markets
+              {t('portfolio.description')}
             </p>
           </div>
 
@@ -75,7 +79,16 @@ const Portfolio = () => {
                         <div className="flex items-center gap-4 text-muted-foreground mb-3">
                           <div className="flex items-center gap-2">
                             <MapPin className="w-4 h-4" />
-                            <span className="font-medium">{role.company}</span>
+                            <div className="flex items-center gap-4">
+                              {role.logo && (
+                                <img 
+                                  src={role.logo} 
+                                  alt={`${role.company} logo`}
+                                  className="w-20 h-20 object-contain rounded-xl border-2 border-border shadow-lg"
+                                />
+                              )}
+                              <span className="font-medium text-lg">{role.company}</span>
+                            </div>
                           </div>
                           <div className="flex items-center gap-2">
                             <Calendar className="w-4 h-4" />
@@ -87,7 +100,7 @@ const Portfolio = () => {
                       {role.current && (
                         <div className="flex items-center gap-2 px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium">
                           <TrendingUp className="w-4 h-4" />
-                          <span>Current</span>
+                          <span>{t('portfolio.current')}</span>
                         </div>
                       )}
                     </div>

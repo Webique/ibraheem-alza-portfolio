@@ -74,7 +74,7 @@ const Services = () => {
             {t('services.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive operational excellence across multiple business functions
+            {t('services.description')}
           </p>
         </div>
 
@@ -101,10 +101,10 @@ const Services = () => {
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <div className="card-premium p-8 md:p-12 max-w-3xl mx-auto">
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 gradient-text">
-              Ready to optimize your operations?
+              {t('services.cta.title')}
             </h3>
             <p className="text-lg text-muted-foreground mb-6">
-              Let's discuss how we can drive efficiency and growth in your business.
+              {t('services.cta.description')}
             </p>
             <button
               onClick={() => {

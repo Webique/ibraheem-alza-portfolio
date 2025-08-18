@@ -66,7 +66,7 @@ const Metrics = () => {
             {t('metrics.title')}
           </h2>
           <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
-            Data-driven results across multiple sectors and markets
+            {t('metrics.description')}
           </p>
         </div>
 

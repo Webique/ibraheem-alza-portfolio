@@ -22,13 +22,13 @@ const Footer = () => {
             </div>
             
             <p className="text-primary-foreground/60 leading-relaxed">
-              Operations excellence across KSA, Belgium, and Kuwait
+              {t('footer.operations')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h4 className="font-semibold text-lg text-secondary">Quick Links</h4>
+            <h4 className="font-semibold text-lg text-secondary">{t('footer.quickLinks')}</h4>
             <div className="grid grid-cols-2 gap-2">
               {['#about', '#metrics', '#portfolio', '#services', '#achievements', '#contact'].map((link) => (
                 <button
@@ -49,7 +49,7 @@ const Footer = () => {
 
           {/* Contact & Actions */}
           <div className="space-y-6">
-            <h4 className="font-semibold text-lg text-secondary">Connect</h4>
+            <h4 className="font-semibold text-lg text-secondary">{t('footer.connect')}</h4>
             
             <div className="space-y-4">
               <a
@@ -77,7 +77,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Linkedin className="w-4 h-4" />
-                <span className="text-sm">LinkedIn Profile</span>
+                <span className="text-sm">{t('footer.linkedinProfile')}</span>
               </a>
             </div>
 
@@ -91,15 +91,6 @@ const Footer = () => {
                 <Globe className="w-4 h-4 mr-2" />
                 {language === 'en' ? 'العربية' : 'English'}
               </Button>
-              
-              <Button
-                variant="outline"
-                size="sm"
-                className="border-secondary text-secondary hover:bg-secondary hover:text-premium-black"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                CV
-              </Button>
             </div>
           </div>
         </div>
@@ -112,7 +103,7 @@ const Footer = () => {
             </p>
             
             <p className="text-primary-foreground/40 text-xs">
-              Built with excellence • Powered by innovation
+              {t('footer.builtWith')}
             </p>
           </div>
         </div>

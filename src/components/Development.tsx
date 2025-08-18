@@ -6,14 +6,14 @@ const Development = () => {
   const { t } = useLanguage();
 
   const skills = [
-    { icon: Target, name: 'Leadership', color: 'text-secondary', bgColor: 'bg-secondary/10' },
-    { icon: BookOpen, name: 'TOT', color: 'text-primary', bgColor: 'bg-primary/10' },
-    { icon: Calculator, name: 'Financial Accounting', color: 'text-secondary', bgColor: 'bg-secondary/10' },
-    { icon: Award, name: 'ISO 9001 Quality Management', color: 'text-primary', bgColor: 'bg-primary/10' },
-    { icon: Heart, name: 'Emotional Intelligence', color: 'text-secondary', bgColor: 'bg-secondary/10' },
-    { icon: ClipboardList, name: 'Project Planning', color: 'text-primary', bgColor: 'bg-primary/10' },
-    { icon: ClipboardList, name: 'Report Writing', color: 'text-secondary', bgColor: 'bg-secondary/10' },
-    { icon: Clock, name: 'Time Management', color: 'text-primary', bgColor: 'bg-primary/10' },
+    { icon: Target, name: t('development.leadership'), color: 'text-secondary', bgColor: 'bg-secondary/10' },
+    { icon: BookOpen, name: t('development.tot'), color: 'text-primary', bgColor: 'bg-primary/10' },
+    { icon: Calculator, name: t('development.financial'), color: 'text-secondary', bgColor: 'bg-secondary/10' },
+    { icon: Award, name: t('development.iso'), color: 'text-primary', bgColor: 'bg-primary/10' },
+    { icon: Heart, name: t('development.ei'), color: 'text-secondary', bgColor: 'bg-secondary/10' },
+    { icon: ClipboardList, name: t('development.planning'), color: 'text-primary', bgColor: 'bg-primary/10' },
+    { icon: ClipboardList, name: t('development.reports'), color: 'text-secondary', bgColor: 'bg-secondary/10' },
+    { icon: Clock, name: t('development.time'), color: 'text-primary', bgColor: 'bg-primary/10' },
   ];
 
   return (
@@ -25,7 +25,7 @@ const Development = () => {
             {t('development.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Continuous learning and professional growth across core competencies
+            {t('development.description')}
           </p>
         </div>
 
