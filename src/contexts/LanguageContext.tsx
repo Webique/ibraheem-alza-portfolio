@@ -59,26 +59,7 @@ const translations = {
     'metrics.retention': 'Retention',
     'metrics.description': 'Data-driven results across multiple sectors and markets',
     
-    // Portfolio
-    'portfolio.title': 'Portfolio',
-    'portfolio.role1.title': 'Group Operations Manager',
-    'portfolio.role1.company': 'Al-Maha Group',
-    'portfolio.role1.period': '2024–Present',
-    'portfolio.role1.description': 'Multi-sector ops (F&B, retail, real estate, manufacturing, entertainment). Centralized procurement → 15% cost cut. Unified SOPs → 92% guest satisfaction. Led 250+ staff, launched training academy (+18% retention). ERP/POS rollout → 98% accuracy, 57% faster closing. Earned Green Enterprise certificate.',
-    'portfolio.description': 'Leadership roles across multiple sectors and markets',
-    'portfolio.current': 'Current',
-    
-    'portfolio.role2.title': 'Barista Head',
-    'portfolio.role2.company': 'Ground Handling',
-    'portfolio.role2.period': '2022–2023',
-    
-    'portfolio.role3.title': 'Area Supervisor',
-    'portfolio.role3.company': 'OverJar',
-    'portfolio.role3.period': '2020–2022',
-    
-    'portfolio.role4.title': 'Chief Executive Director',
-    'portfolio.role4.company': 'Noble Chocolate & Café',
-    'portfolio.role4.period': '2016–2019',
+
     
     // Services
     'services.title': 'Services',
@@ -160,7 +141,7 @@ const translations = {
     'partners.list': 'Al-Maha Mall, Tulay, Triple Seven, Over Jar, Noble Chocolate',
     'partners.description': 'Trusted partnerships that drive mutual success and growth',
     'partners.philosophy': 'Success is built on strategic partnerships that create value for all stakeholders',
-    'partners.alMaha': 'Al-Maha Mall',
+
     'partners.tulay': 'Tulay',
     'partners.tripleSeven': 'Triple Seven',
     'partners.overJar': 'Over Jar',
@@ -218,26 +199,7 @@ const translations = {
     'metrics.retention': 'زيادة الاحتفاظ بالموظفين',
     'metrics.description': 'نتائج مدعومة بالبيانات عبر عدة قطاعات وأسواق',
     
-    // Portfolio
-    'portfolio.title': 'أعمالي',
-    'portfolio.role1.title': 'مدير العمليات الجماعية',
-    'portfolio.role1.company': 'مجموعة المها',
-    'portfolio.role1.period': '2024 – حتى الآن',
-    'portfolio.role1.description': 'قيادة العمليات في عدة قطاعات (الأغذية والمشروبات، التجزئة، العقارات، التصنيع، الترفيه). المشتريات المركزية → خفض التكاليف 15%. إجراءات تشغيل موحدة → رضا العملاء 92%. قيادة أكثر من 250 موظف وإطلاق أكاديمية تدريب (+18% احتفاظ). دمج أنظمة ERP/POS → %98 دقة، %57 إغلاق أسرع. شهادة "المؤسسة الخضراء".',
-    'portfolio.description': 'الأدوار القيادية عبر عدة قطاعات وأسواق',
-    'portfolio.current': 'الحالي',
-    
-    'portfolio.role2.title': 'رئيس قسم الباريستا',
-    'portfolio.role2.company': 'جراوند هاندلينغ',
-    'portfolio.role2.period': '2022 – 2023',
-    
-    'portfolio.role3.title': 'مشرف منطقة',
-    'portfolio.role3.company': 'أوفر جار',
-    'portfolio.role3.period': '2020 – 2022',
-    
-    'portfolio.role4.title': 'المدير التنفيذي',
-    'portfolio.role4.company': 'نوبل شوكليت آند كافيه',
-    'portfolio.role4.period': '2016 – 2019',
+
     
     // Services
     'services.title': 'الخدمات',
@@ -319,7 +281,7 @@ const translations = {
     'partners.list': 'المها مول، تولاي، تربل سفن، أوفر جار، نوبل شوكليت',
     'partners.description': 'شراكات موثوقة تدفع النجاح المتبادل والنمو',
     'partners.philosophy': 'النجاح مبني على الشراكات الاستراتيجية التي تخلق قيمة لجميع الأطراف المعنية',
-    'partners.alMaha': 'المها مول',
+
     'partners.tulay': 'تولاي',
     'partners.tripleSeven': 'تربل سفن',
     'partners.overJar': 'أوفر جار',

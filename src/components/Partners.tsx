@@ -6,11 +6,6 @@ const Partners = () => {
 
   const partners = [
     {
-      name: t('partners.alMaha'),
-      logo: null,
-      initial: t('partners.alMaha').charAt(0)
-    },
-    {
       name: t('partners.tulay'),
       logo: null,
       initial: t('partners.tulay').charAt(0)

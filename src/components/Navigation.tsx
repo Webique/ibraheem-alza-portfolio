@@ -20,7 +20,6 @@ const Navigation = () => {
     { key: 'nav.home', href: '#home' },
     { key: 'nav.about', href: '#about' },
     { key: 'nav.metrics', href: '#metrics' },
-    { key: 'nav.portfolio', href: '#portfolio' },
     { key: 'nav.services', href: '#services' },
     { key: 'nav.achievements', href: '#achievements' },
     { key: 'nav.partners', href: '#partners' },
