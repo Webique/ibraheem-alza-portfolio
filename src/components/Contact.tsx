@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Linkedin, MapPin } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin, Instagram, MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Contact = () => {
@@ -20,13 +20,13 @@ const Contact = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="max-w-3xl mx-auto space-y-8 animate-fade-in">
+          <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <div>
               <h3 className="font-display text-2xl font-bold mb-6 text-secondary text-center">
                 {t('contact.info')}
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-secondary" />
@@ -34,10 +34,44 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-primary-foreground">{t('contact.emailLabel')}</p>
                     <a 
-                      href="mailto:xhemax.4@gmail.com" 
+                      href="mailto:info@ibraheemzhrani.com" 
                       className="text-secondary hover:text-secondary-hover transition-colors"
                     >
-                      xhemax.4@gmail.com
+                      info@ibraheemzhrani.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
+                    <Instagram className="w-6 h-6 text-secondary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-primary-foreground">{t('contact.instagram')}</p>
+                    <a 
+                      href="https://instagram.com/ibraheemzhrani" 
+                      className="text-secondary hover:text-secondary-hover transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @ibraheemzhrani
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
+                    <MessageCircle className="w-6 h-6 text-secondary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-primary-foreground">{t('contact.snapchat')}</p>
+                    <a 
+                      href="https://snapchat.com/add/ibraheemzhrani" 
+                      className="text-secondary hover:text-secondary-hover transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ibraheemzhrani
                     </a>
                   </div>
                 </div>
@@ -76,7 +110,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 md:col-span-2 lg:col-span-3">
                   <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-secondary" />
                   </div>

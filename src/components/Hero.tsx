@@ -42,9 +42,6 @@ const Hero = () => {
                 <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
                   <span className="gradient-text">{t('hero.title')}</span>
                 </h1>
-                <h2 className="font-display text-2xl md:text-3xl text-white">
-                  {t('hero.position')}
-                </h2>
               </div>
               
               <p className="text-lg md:text-xl leading-relaxed text-white max-w-2xl mx-auto">

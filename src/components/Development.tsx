@@ -30,7 +30,7 @@ const Development = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
@@ -46,28 +46,6 @@ const Development = () => {
               </h3>
             </div>
           ))}
-        </div>
-
-        {/* Education Section */}
-        <div className="max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <div className="card-premium p-8 md:p-12 text-center">
-            <div className="w-20 h-20 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-              <Award className="w-10 h-10 text-premium-black" />
-            </div>
-            
-            <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 gradient-text">
-              {t('education.title')}
-            </h3>
-            
-            <div className="space-y-2">
-              <p className="text-xl font-semibold text-foreground">
-                {t('education.degree')}
-              </p>
-              <p className="text-lg text-muted-foreground">
-                {t('education.university')}
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

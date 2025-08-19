@@ -26,15 +26,15 @@ const translations = {
     
     // Hero Section
     'hero.title': 'IBRAHEEM ALZAHRANI',
-    'hero.position': 'Operations Manager',
-    'hero.description': 'Operations & F&B leader across KSA • Belgium • Kuwait — scaling brands, cutting costs, and elevating customer experience.',
+    'hero.position': 'Business Leader',
+    'hero.description': 'Business & F&B leader across KSA • Belgium • Kuwait — scaling brands, cutting costs, and elevating customer experience.',
     'hero.contact': 'Contact Me',
     'hero.cv': 'Download CV',
     'hero.linkedin': 'LinkedIn',
     
     // About Section
     'about.title': 'About Me',
-    'about.description': 'Operations Manager with 9+ years in F&B (KSA, Belgium, Kuwait). Proven record of 50%+ cost reductions, multi-site scaling, and double-digit sales growth. Expert in strategic planning, supply-chain optimization, and cross-cultural leadership. Upholds ISO 9001 and food-safety standards. Builds high-performance teams, negotiates win–win vendor contracts, and turns data into decisive, growth-focused action.',
+    'about.description': 'Business Leader with 9+ years across multiple sectors (KSA, Belgium, Kuwait). Proven record of 50%+ cost reductions, multi-site scaling, and double-digit sales growth. Expert in strategic planning, supply-chain optimization, and cross-cultural leadership. Upholds ISO 9001 and food-safety standards. Builds high-performance teams, negotiates win–win vendor contracts, and turns data into decisive, growth-focused action.',
     'about.sectors': 'Sectors: F&B, retail, entertainment, real estate',
     'about.philosophy': 'Philosophy: efficiency • innovation • customer satisfaction',
     'about.years': 'Years Experience',
@@ -71,7 +71,7 @@ const translations = {
     'services.6': 'Sales Growth & Customer Experience',
     'services.7': 'Quality & Food Safety Management',
     'services.8': 'Digital Transformation & Systems',
-    'services.description': 'Comprehensive operational excellence across multiple business functions',
+    'services.description': 'Integrated Operational & Consulting Solutions for Your Business Success',
     'services.cta.title': 'Ready to optimize your operations?',
     'services.cta.description': 'Let\'s discuss how we can drive efficiency and growth in your business.',
     
@@ -95,6 +95,9 @@ const translations = {
     'contact.info': 'Contact Information',
     'contact.ready': 'Ready to discuss your operational challenges and opportunities? Let\'s connect.',
     'contact.emailLabel': 'Email',
+    'contact.instagram': 'Instagram',
+    'contact.snapchat': 'Snapchat',
+    'contact.domain': 'Domain',
     'contact.whatsapp': 'WhatsApp',
     'contact.linkedin': 'LinkedIn',
     'contact.location': 'Location',
@@ -166,15 +169,15 @@ const translations = {
     
     // Hero Section
     'hero.title': 'إبراهيم الزهراني',
-    'hero.position': 'مدير عمليات',
-    'hero.description': 'خبير قيادة العمليات والضيافة عبر السعودية وبلجيكا والكويت — نمو العلامات، خفض التكاليف، ورفع تجربة العملاء.',
+    'hero.position': 'قائد الأعمال',
+    'hero.description': 'خبير قيادة الأعمال والضيافة عبر السعودية وبلجيكا والكويت — نمو العلامات، خفض التكاليف، ورفع تجربة العملاء.',
     'hero.contact': 'تواصل معي',
     'hero.cv': 'تحميل السيرة الذاتية',
     'hero.linkedin': 'لينكدإن',
     
     // About Section
     'about.title': 'نبذة عني',
-    'about.description': 'مدير عمليات بخبرة تتجاوز 9 سنوات في قطاع الأغذية والمشروبات (السعودية، بلجيكا، الكويت). سجل مثبت في خفض التكاليف بأكثر من 50% وتوسيع فروع متعددة وتحقيق نمو مضاعف في المبيعات. خبير في التخطيط الاستراتيجي وسلاسل الإمداد وقيادة الفرق متعددة الثقافات، مع التزام بمعايير ISO 9001 وسلامة الغذاء. متمكن في بناء فرق عالية الأداء وعقود توريد رابحة وتحويل البيانات إلى قرارات نمو فعّالة.',
+    'about.description': 'قائد الأعمال بخبرة تتجاوز 9 سنوات عبر عدة قطاعات (السعودية، بلجيكا، الكويت). سجل مثبت في خفض التكاليف بأكثر من 50% وتوسيع فروع متعددة وتحقيق نمو مضاعف في المبيعات. خبير في التخطيط الاستراتيجي وسلاسل الإمداد وقيادة الفرق متعددة الثقافات، مع التزام بمعايير ISO 9001 وسلامة الغذاء. متمكن في بناء فرق عالية الأداء وعقود توريد رابحة وتحويل البيانات إلى قرارات نمو فعّالة.',
     'about.sectors': 'القطاعات: الأغذية والمشروبات، التجزئة، الترفيه، العقارات',
     'about.philosophy': 'الفلسفة: الكفاءة • الابتكار • رضا العملاء',
     'about.years': 'سنوات خبرة',
@@ -211,7 +214,7 @@ const translations = {
     'services.6': 'نمو المبيعات وتجربة العملاء',
     'services.7': 'إدارة الجودة وسلامة الغذاء',
     'services.8': 'التحول الرقمي وإدارة الأنظمة',
-    'services.description': 'التميز التشغيلي الشامل عبر وظائف الأعمال المتعددة',
+    'services.description': 'حلول تشغيلية واستشارية متكاملة لنجاح أعمالك',
     'services.cta.title': 'هل أنت مستعد لتحسين عملياتك؟',
     'services.cta.description': 'دعنا نناقش كيف يمكننا دفع الكفاءة والنمو في عملك.',
     
@@ -235,6 +238,9 @@ const translations = {
     'contact.info': 'معلومات التواصل',
     'contact.ready': 'هل أنت مستعد لمناقشة تحدياتك وفرصك التشغيلية؟ دعنا نتواصل.',
     'contact.emailLabel': 'البريد الإلكتروني',
+    'contact.instagram': 'إنستغرام',
+    'contact.snapchat': 'سناب شات',
+    'contact.domain': 'الدومين',
     'contact.whatsapp': 'واتساب',
     'contact.linkedin': 'لينكدإن',
     'contact.location': 'الموقع',
