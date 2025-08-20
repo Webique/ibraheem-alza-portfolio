@@ -37,9 +37,6 @@ const Partners = () => {
     }
   ];
 
-  // Duplicate partners multiple times for seamless infinite loop
-  const marqueePartners = [...partners, ...partners, ...partners, ...partners, ...partners];
-
   return (
     <section id="partners" className="section-padding bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden">
       {/* Background Elements */}
@@ -62,17 +59,16 @@ const Partners = () => {
           </p>
         </div>
 
-        {/* Marquee Container */}
-        <div className="relative">
-          {/* Marquee Track */}
-          <div className="relative overflow-hidden">
-            <div className="flex animate-marquee whitespace-nowrap">
-              {marqueePartners.map((partner, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 mx-8 group"
-                >
-                  <div className="w-24 h-24 flex items-center justify-center">
+        {/* Seamless Infinite Marquee */}
+        <div className="relative mb-20">
+          {/* Marquee Container */}
+          <div className="marquee-container overflow-hidden">
+            {/* Single Row - Moving Right to Left */}
+            <div className="marquee-track">
+              {/* First set of partners */}
+              {partners.map((partner, index) => (
+                <div key={`first-${index}`} className="marquee-item">
+                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center">
                     {partner.logo ? (
                       <img 
                         src={partner.logo} 
@@ -81,7 +77,27 @@ const Partners = () => {
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
-                        <span className="text-3xl font-bold text-white">
+                        <span className="text-2xl md:text-3xl font-bold text-white">
+                          {partner.initial}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+              {/* Second set - exact duplicate for seamless loop */}
+              {partners.map((partner, index) => (
+                <div key={`second-${index}`} className="marquee-item">
+                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center">
+                    {partner.logo ? (
+                      <img 
+                        src={partner.logo} 
+                        alt={`${partner.name} logo`}
+                        className="w-full h-full object-contain rounded-lg hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
+                        <span className="text-2xl md:text-3xl font-bold text-white">
                           {partner.initial}
                         </span>
                       </div>
@@ -91,14 +107,10 @@ const Partners = () => {
               ))}
             </div>
           </div>
-
-          {/* Gradient Fade Edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10"></div>
         </div>
 
         {/* Partnership Philosophy */}
-        <div className="mt-20 text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
+        <div className="text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-secondary/10 via-primary/10 to-secondary/10 rounded-3xl p-8 md:p-12 border border-white/20 backdrop-blur-sm">
               <div className="w-20 h-20 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-6">
