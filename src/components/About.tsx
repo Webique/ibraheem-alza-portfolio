@@ -19,12 +19,40 @@ const About = () => {
           <div className="space-y-12">
             {/* Description */}
             <div className="card-premium p-8 md:p-12 animate-slide-up">
-              <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mb-8">
-                {t('about.description')}
-              </p>
+              <div className="space-y-6 text-lg md:text-xl leading-relaxed text-foreground/90">
+                {/* Opening Statement */}
+                <p>
+                  {t('about.description').split('\n\n')[0]}
+                </p>
+                
+                {/* Services Introduction */}
+                <p>
+                  {t('about.description').split('\n\n')[1]}
+                </p>
+                
+                {/* Bullet Points */}
+                <div className="space-y-3 pl-4">
+                  {t('about.description').split('\n\n')[2].split('\n').filter(line => line.trim().startsWith('•')).map((point, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <span className="text-secondary text-xl">•</span>
+                      <span>{point.replace('•', '').trim()}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Journey Story */}
+                <p>
+                  {t('about.description').split('\n\n')[3]}
+                </p>
+                
+                {/* Partnership Message */}
+                <p>
+                  {t('about.description').split('\n\n')[4]}
+                </p>
+              </div>
               
               {/* Quick Stats */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8 border-t border-border">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8 border-t border-border mt-8">
                 <div className="space-y-2">
                   <h4 className="font-semibold text-secondary text-sm uppercase tracking-wider">
                     {t('about.sectors').split(':')[0]}:
