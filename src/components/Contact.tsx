@@ -121,17 +121,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* Languages */}
-            <div className="text-center">
-              <h4 className="font-display text-xl font-bold mb-4 text-secondary">
-                {t('languages.title')}
-              </h4>
-              <div className="space-y-2">
-                <p className="text-primary-foreground/90">{t('languages.arabic')}</p>
-                <p className="text-primary-foreground/90">{t('languages.english')}</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

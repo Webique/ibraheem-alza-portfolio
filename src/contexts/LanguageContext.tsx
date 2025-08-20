@@ -15,7 +15,7 @@ const translations = {
   en: {
     // Navigation
     'nav.home': 'Home',
-    'nav.about': 'About',
+    'nav.about': 'About Us',
     'nav.metrics': 'Metrics',
     'nav.portfolio': 'Portfolio',
     'nav.services': 'Services',
@@ -33,8 +33,8 @@ const translations = {
     'hero.linkedin': 'LinkedIn',
     
     // About Section
-    'about.title': 'About Me',
-    'about.description': 'Business Leader with 9+ years across multiple sectors (KSA, Belgium, Kuwait). Proven record of 50%+ cost reductions, multi-site scaling, and double-digit sales growth. Expert in strategic planning, supply-chain optimization, and cross-cultural leadership. Upholds ISO 9001 and food-safety standards. Builds high-performance teams, negotiates win–win vendor contracts, and turns data into decisive, growth-focused action.',
+    'about.title': 'About Us',
+    'about.description': 'We believe that the success of any restaurant or café starts with smart operations, a strong brand identity, and a customer experience that lasts.\n\nWe help business owners transform ideas into leading brands through integrated solutions, including:\n• Building strong operational structures.\n• Developing signature recipes and unique products.\n• Designing strategies for growth and expansion.\n• Ensuring the highest standards of quality and food safety.\n\nOur journey began with a passion for the F&B sector and has expanded into retail, entertainment, and real estate. Today, we work with our clients as true partners, leveraging our expertise to create businesses that are more efficient, profitable, and sustainable.\n\nOur Values:\nPassion • Partnership • Quality • Innovation',
     'about.sectors': 'Sectors: F&B, retail, entertainment, real estate',
     'about.philosophy': 'Philosophy: efficiency • innovation • customer satisfaction',
     'about.years': 'Years Experience',
@@ -109,7 +109,6 @@ const translations = {
     // Footer
     'footer.language': 'Language',
     'footer.copyright': '© 2025 Ibraheem Alzahrani',
-    'footer.operations': 'Operations excellence across KSA, Belgium, and Kuwait',
     'footer.quickLinks': 'Quick Links',
     'footer.connect': 'Connect',
     'footer.linkedinProfile': 'LinkedIn Profile',
@@ -120,11 +119,6 @@ const translations = {
     'education.title': 'Education',
     'education.degree': 'Bachelor\'s Degree in Accounting',
     'education.university': 'King Khalid University, KSA, 2017',
-    
-    // Languages
-    'languages.title': 'Languages',
-    'languages.arabic': 'Arabic (Native)',
-    'languages.english': 'English (Fluent)',
     
     // Development
     'development.title': 'Professional Development',
@@ -158,7 +152,7 @@ const translations = {
   ar: {
     // Navigation
     'nav.home': 'الصفحة الرئيسية',
-    'nav.about': 'نبذة عني',
+    'nav.about': 'من نحن',
     'nav.metrics': 'الإنجازات بالأرقام',
     'nav.portfolio': 'أعمالي',
     'nav.services': 'الخدمات',
@@ -176,8 +170,8 @@ const translations = {
     'hero.linkedin': 'لينكدإن',
     
     // About Section
-    'about.title': 'نبذة عني',
-    'about.description': 'قائد الأعمال بخبرة تتجاوز 9 سنوات عبر عدة قطاعات (السعودية، بلجيكا، الكويت). سجل مثبت في خفض التكاليف بأكثر من 50% وتوسيع فروع متعددة وتحقيق نمو مضاعف في المبيعات. خبير في التخطيط الاستراتيجي وسلاسل الإمداد وقيادة الفرق متعددة الثقافات، مع التزام بمعايير ISO 9001 وسلامة الغذاء. متمكن في بناء فرق عالية الأداء وعقود توريد رابحة وتحويل البيانات إلى قرارات نمو فعّالة.',
+    'about.title': 'من نحن',
+    'about.description': 'نحن فريق يؤمن أن نجاح أي مطعم أو مقهى يبدأ من التشغيل الذكي، والهوية القوية، والتجربة التي تبقى في ذاكرة العملاء.\n\nنساعد أصحاب الأعمال على تحويل أفكارهم إلى علامات تجارية رائدة عبر حلول متكاملة تشمل:\n• بناء الهياكل التشغيلية القوية.\n• تطوير الوصفات والمنتجات المميزة.\n• صياغة استراتيجيات النمو والانتشار.\n• ضمان أعلى معايير الجودة وسلامة الغذاء.\n\nقصتنا بدأت بشغف في عالم الأغذية والمشروبات، وتطورت لتشمل التجزئة والترفيه والعقارات. اليوم، نعمل مع عملائنا كشركاء حقيقيين في النجاح، حيث نضع خبرتنا بين أيديهم لخلق أعمال أكثر كفاءة وربحية واستدامة.\n\nقيمنا:\nالشغف • الشراكة • الجودة • الابتكار',
     'about.sectors': 'القطاعات: الأغذية والمشروبات، التجزئة، الترفيه، العقارات',
     'about.philosophy': 'الفلسفة: الكفاءة • الابتكار • رضا العملاء',
     'about.years': 'سنوات خبرة',
@@ -252,7 +246,6 @@ const translations = {
     // Footer
     'footer.language': 'اختيار اللغة',
     'footer.copyright': '© 2025 إبراهيم الزهراني',
-    'footer.operations': 'التميز التشغيلي عبر السعودية وبلجيكا والكويت',
     'footer.quickLinks': 'روابط سريعة',
     'footer.connect': 'تواصل معي',
     'footer.linkedinProfile': 'ملف لينكدإن',
@@ -263,11 +256,6 @@ const translations = {
     'education.title': 'التعليم',
     'education.degree': 'بكالوريوس محاسبة',
     'education.university': 'جامعة الملك خالد، السعودية، 2017',
-    
-    // Languages
-    'languages.title': 'اللغات',
-    'languages.arabic': 'العربية (لغة أم)',
-    'languages.english': 'الإنجليزية (بطلاقة)',
     
     // Development
     'development.title': 'التطوير المهني',

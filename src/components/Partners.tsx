@@ -8,8 +8,8 @@ const Partners = () => {
   const partners = [
     {
       name: t('partners.tulay'),
-      logo: null,
-      initial: t('partners.tulay').charAt(0)
+      logo: '/tulay.png',
+      initial: 'T'
     },
     {
       name: 'Triple Seven',

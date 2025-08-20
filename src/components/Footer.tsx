@@ -20,10 +20,6 @@ const Footer = () => {
                 {t('hero.position')}
               </p>
             </div>
-            
-            <p className="text-primary-foreground/60 leading-relaxed">
-              {t('footer.operations')}
-            </p>
           </div>
 
           {/* Quick Links */}
@@ -53,11 +49,11 @@ const Footer = () => {
             
             <div className="space-y-4">
               <a
-                href="mailto:xhemax.4@gmail.com"
+                href="mailto:info@ibraheemzhrani.com"
                 className="flex items-center gap-3 text-primary-foreground/70 hover:text-secondary transition-colors duration-300"
               >
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">xhemax.4@gmail.com</span>
+                <span className="text-sm">info@ibraheemzhrani.com</span>
               </a>
               
               <a
@@ -68,6 +64,19 @@ const Footer = () => {
               >
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">+966530536556</span>
+              </a>
+              
+              <a
+                href="https://snapchat.com/add/ibraheemzhrani"
+                className="flex items-center gap-3 text-primary-foreground/70 hover:text-secondary transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center relative">
+                  <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
+                  <div className="w-1 h-1 bg-yellow-400 rounded-full absolute top-1 left-1"></div>
+                </div>
+                <span className="text-sm">ibraheemzhrani</span>
               </a>
               
               <a
