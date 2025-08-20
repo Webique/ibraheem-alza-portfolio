@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Partners = () => {
   const { language } = useLanguage();
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   const partners = [
     { logo: '/tulay.png', name: 'Tulay' },
@@ -12,34 +11,9 @@ const Partners = () => {
     { logo: '/novell.jpeg', name: 'Noble Chocolate' },
     { logo: '/frykit.png', name: 'Frykit' },
     { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/ath.png', name: 'Athar' }
+    { logo: '/ath.png', name: 'Athar' },
+    { logo: '/new.png', name: 'New' }
   ];
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-
-    let scrollPosition = 0;
-    const scrollSpeed = 2; // Faster speed for visible movement
-
-    const scroll = () => {
-      if (scrollContainer) {
-        scrollPosition += scrollSpeed;
-        
-        // Reset when reaching the end for seamless loop
-        if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-          scrollPosition = 0;
-        }
-        
-        scrollContainer.scrollLeft = scrollPosition;
-      }
-    };
-
-    // Fast interval for smooth movement
-    const intervalId = setInterval(scroll, 30);
-
-    return () => clearInterval(intervalId);
-  }, []);
 
   return (
     <section id="partners" className="section-padding bg-muted/20">
@@ -57,22 +31,14 @@ const Partners = () => {
           </p>
         </div>
 
-        {/* Partners Horizontal Scrolling Bar */}
-        <div className="mb-16 overflow-hidden">
-          <div 
-            ref={scrollRef}
-            className="flex items-center gap-8 lg:gap-12"
-            style={{ 
-              width: 'max-content',
-              minWidth: '200%' // Ensure there's enough content to scroll
-            }}
-          >
-            {/* Multiple copies for seamless infinite loop */}
-            {[...partners, ...partners, ...partners, ...partners].map((partner, index) => (
+        {/* Partners Horizontal Bar - Simple and Stable */}
+        <div className="mb-16">
+          <div className="flex items-center justify-center gap-6 md:gap-8 lg:gap-12 overflow-x-auto pb-4">
+            {partners.map((partner, index) => (
               <div
                 key={index}
                 className="flex-shrink-0 animate-scale-in"
-                style={{ animationDelay: `${(index % partners.length) * 0.1}s` }}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center overflow-hidden bg-white shadow-sm">
                   <img 
