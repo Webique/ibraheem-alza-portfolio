@@ -1,101 +1,131 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Partners = () => {
   const { language } = useLanguage();
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   const partners = [
-    { logo: '/tulay.png', name: 'Tulay' },
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/ath.png', name: 'Athar' },
-    { logo: '/new.png', name: 'New' }
+    {
+      name: 'Al-Maha Group',
+      logo: '/new.png',
+      initial: 'A'
+    },
+    {
+      name: 'Tulay',
+      logo: '/tulay.png',
+      initial: 'T'
+    },
+    {
+      name: 'Triple Seven',
+      logo: '/tripleseven.png',
+      initial: 'T'
+    },
+    {
+      name: 'Over Jar',
+      logo: '/overjar.png',
+      initial: 'O'
+    },
+    {
+      name: 'Noble Chocolate',
+      logo: '/novell.jpeg',
+      initial: 'N'
+    },
+    {
+      name: 'Frykit',
+      logo: '/frykit.png',
+      initial: 'F'
+    },
+    {
+      name: 'Flowers Beach',
+      logo: '/flowersbeach.jpeg',
+      initial: 'F'
+    },
+    {
+      name: 'Ath',
+      logo: '/ath.png',
+      initial: 'A'
+    }
   ];
 
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-
-    let scrollPosition = 0;
-    const scrollSpeed = 0.5; // Very slow and stable
-
-    const scroll = () => {
-      if (scrollContainer) {
-        scrollPosition += scrollSpeed;
-        
-        // Reset when reaching the end for seamless loop
-        if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-          scrollPosition = 0;
-        }
-        
-        scrollContainer.scrollLeft = scrollPosition;
-      }
-    };
-
-    // Slow interval for stability
-    const intervalId = setInterval(scroll, 100);
-
-    return () => clearInterval(intervalId);
-  }, []);
+  // Duplicate partners multiple times for seamless infinite loop
+  const marqueePartners = [...partners, ...partners, ...partners, ...partners];
 
   return (
-    <section id="partners" className="section-padding bg-muted/20">
-      <div className="container-width">
+    <section id="partners" className="section-padding bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-64 h-64 bg-secondary/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+      </div>
+
+      <div className="container-width relative z-10">
         {/* Section Title */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-20 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            {language === 'ar' ? 'شركاء النجاح' : 'Partners'}
+            {language === 'ar' ? 'شركاء النجاح' : 'Trusted Partners'}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             {language === 'ar' 
-              ? 'شراكات موثوقة تدفع النجاح المتبادل والنمو'
-              : 'Trusted partnerships that drive mutual success and growth'
+              ? 'شراكات استراتيجية تدفع النمو والتميز في كل مشروع'
+              : 'Strategic partnerships that drive growth and excellence in every project'
             }
           </p>
         </div>
 
-        {/* Partners Horizontal Bar - Auto-scrolling */}
-        <div className="mb-16 overflow-hidden">
-          <div 
-            ref={scrollRef}
-            className="flex items-center gap-6 md:gap-8 lg:gap-12"
-            style={{ width: 'max-content' }}
-          >
-            {/* Duplicate partners for seamless loop */}
-            {[...partners, ...partners, ...partners].map((partner, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 animate-scale-in"
-                style={{ animationDelay: `${(index % partners.length) * 0.1}s` }}
-              >
-                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center overflow-hidden bg-white shadow-sm">
-                  <img 
-                    src={partner.logo} 
-                    alt={`${partner.name} logo`}
-                    className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain rounded-full"
-                  />
+        {/* Marquee Container */}
+        <div className="relative">
+          {/* Marquee Track */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-marquee whitespace-nowrap">
+              {marqueePartners.map((partner, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 mx-8 group"
+                >
+                  <div className="w-24 h-24 flex items-center justify-center">
+                    {partner.logo ? (
+                      <img 
+                        src={partner.logo} 
+                        alt={`${partner.name} logo`}
+                        className="w-full h-full object-contain rounded-lg hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
+                        <span className="text-3xl font-bold text-white">
+                          {partner.initial}
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+
+          {/* Gradient Fade Edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10"></div>
         </div>
 
         {/* Partnership Philosophy */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <div className="max-w-3xl mx-auto">
-            <blockquote className="text-2xl md:text-3xl font-display italic text-foreground/80 leading-relaxed">
-              {language === 'ar' 
-                ? 'النجاح مبني على الشراكات الاستراتيجية التي تخلق قيمة لجميع الأطراف المعنية'
-                : 'Success is built on strategic partnerships that create value for all stakeholders'
-              }
-            </blockquote>
-            <cite className="block mt-6 text-lg text-muted-foreground">
-              — Ibraheem Alzahrani
-            </cite>
+        <div className="mt-20 text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-secondary/10 via-primary/10 to-secondary/10 rounded-3xl p-8 md:p-12 border border-white/20 backdrop-blur-sm">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl text-white">🤝</span>
+              </div>
+              
+              <blockquote className="text-2xl md:text-3xl font-display italic text-foreground/90 leading-relaxed mb-6">
+                {language === 'ar' 
+                  ? 'النجاح مبني على الشراكات الاستراتيجية التي تخلق قيمة لجميع الأطراف المعنية'
+                  : 'Success is built on strategic partnerships that create value for all stakeholders'
+                }
+              </blockquote>
+              
+              <cite className="block text-lg text-muted-foreground">
+                — Ibraheem Alzahrani
+              </cite>
+            </div>
           </div>
         </div>
       </div>

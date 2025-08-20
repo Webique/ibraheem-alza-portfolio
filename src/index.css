@@ -286,6 +286,20 @@
   [dir="ltr"] .animate-slide-in-left {
     animation: slide-in-left 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
+
+  /* Marquee Animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
 }
 
 /* Keyframe Animations */
