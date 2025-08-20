@@ -300,6 +300,20 @@
   .animate-marquee {
     animation: marquee 40s linear infinite;
   }
+
+  /* Faster marquee on mobile devices */
+  @media (max-width: 768px) {
+    .animate-marquee {
+      animation: marquee 15s linear infinite;
+    }
+  }
+
+  /* Even faster on small mobile devices */
+  @media (max-width: 480px) {
+    .animate-marquee {
+      animation: marquee 10s linear infinite;
+    }
+  }
 }
 
 /* Keyframe Animations */
