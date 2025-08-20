@@ -48,14 +48,14 @@ const Partners = () => {
     if (!scrollContainer) return;
 
     let scrollPosition = 0;
-    const scrollSpeed = 1; // pixels per frame
-    const scrollDirection = 1; // 1 for right, -1 for left
+    const scrollSpeed = 2; // Increased speed for more noticeable movement
+    const scrollDirection = 1; // 1 for right to left
 
     const scroll = () => {
       if (scrollContainer) {
         scrollPosition += scrollSpeed * scrollDirection;
         
-        // Reset position when reaching the end
+        // Reset position when reaching the end for seamless loop
         if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
           scrollPosition = 0;
         }
@@ -64,7 +64,8 @@ const Partners = () => {
       }
     };
 
-    const intervalId = setInterval(scroll, 50); // Update every 50ms for smooth scrolling
+    // Faster interval for smoother movement on all devices
+    const intervalId = setInterval(scroll, 30); // Update every 30ms for smooth scrolling
 
     return () => clearInterval(intervalId);
   }, []);
