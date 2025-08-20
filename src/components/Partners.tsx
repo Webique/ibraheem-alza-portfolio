@@ -105,6 +105,26 @@ const Partners = () => {
                   </div>
                 </div>
               ))}
+              {/* Third set - for perfect seamless loop */}
+              {partners.map((partner, index) => (
+                <div key={`third-${index}`} className="marquee-item">
+                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center">
+                    {partner.logo ? (
+                      <img 
+                        src={partner.logo} 
+                        alt={`${partner.name} logo`}
+                        className="w-full h-full object-contain rounded-lg hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
+                        <span className="text-2xl md:text-3xl font-bold text-white">
+                          {partner.initial}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
