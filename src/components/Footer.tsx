@@ -12,14 +12,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <div>
-              <h3 className="font-display font-bold text-2xl gradient-text mb-2">
-                {t('hero.title')}
-              </h3>
-              <p className="text-primary-foreground/80">
-                {t('hero.position')}
-              </p>
-            </div>
+            <p className="text-primary-foreground/60 leading-relaxed">
+              {t('footer.location')}
+            </p>
           </div>
 
           {/* Quick Links */}

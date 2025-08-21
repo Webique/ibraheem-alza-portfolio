@@ -101,7 +101,7 @@ const translations = {
     'contact.whatsapp': 'WhatsApp',
     'contact.linkedin': 'LinkedIn',
     'contact.location': 'Location',
-    'contact.countries': 'KSA • Belgium • Kuwait',
+    'contact.countries': 'Saudi Arabia, Riyadh',
     'contact.sending': 'Sending...',
     'contact.successTitle': 'Message sent successfully!',
     'contact.successDesc': 'Thank you for your message. I\'ll get back to you soon.',
@@ -109,6 +109,8 @@ const translations = {
     // Footer
     'footer.language': 'Language',
     'footer.copyright': '© 2025 Ibraheem Alzahrani',
+    'footer.operations': 'Operations excellence across KSA, Belgium, and Kuwait',
+    'footer.location': 'Saudi Arabia, Riyadh',
     'footer.quickLinks': 'Quick Links',
     'footer.connect': 'Connect',
     'footer.linkedinProfile': 'LinkedIn Profile',
@@ -238,7 +240,7 @@ const translations = {
     'contact.whatsapp': 'واتساب',
     'contact.linkedin': 'لينكدإن',
     'contact.location': 'الموقع',
-    'contact.countries': 'السعودية • بلجيكا • الكويت',
+    'contact.countries': 'السعودية، الرياض',
     'contact.sending': 'جاري الإرسال...',
     'contact.successTitle': 'تم إرسال الرسالة بنجاح!',
     'contact.successDesc': 'شكراً لك على رسالتك. سأرد عليك قريباً.',
@@ -246,6 +248,8 @@ const translations = {
     // Footer
     'footer.language': 'اختيار اللغة',
     'footer.copyright': '© 2025 إبراهيم الزهراني',
+    'footer.operations': 'التميز التشغيلي عبر السعودية، بلجيكا، والكويت',
+    'footer.location': 'السعودية، الرياض',
     'footer.quickLinks': 'روابط سريعة',
     'footer.connect': 'تواصل معي',
     'footer.linkedinProfile': 'ملف لينكدإن',
@@ -289,7 +293,7 @@ const translations = {
 };
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('ar');
   const isRTL = language === 'ar';
 
   useEffect(() => {

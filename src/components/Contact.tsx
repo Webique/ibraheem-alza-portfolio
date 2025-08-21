@@ -49,12 +49,12 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-primary-foreground">{t('contact.instagram')}</p>
                     <a 
-                      href="https://instagram.com/ibraheemzhrani" 
+                      href="https://instagram.com/ibrazhrani" 
                       className="text-secondary hover:text-secondary-hover transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      @ibraheemzhrani
+                      @ibrazhrani
                     </a>
                   </div>
                 </div>
