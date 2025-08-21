@@ -31,6 +31,11 @@ const Partners = () => {
       initial: 'F'
     },
     {
+      name: 'novellll',
+      logo: '/novel.png',
+      initial: 'N'
+    },
+    {
       name: 'Ath',
       logo: '/ath.png',
       initial: 'A'
