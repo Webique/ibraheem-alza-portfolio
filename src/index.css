@@ -297,7 +297,7 @@
   .marquee-track {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 40s linear infinite;
+    animation: marquee-scroll 60s linear infinite;
   }
 
   .marquee-item {
@@ -317,13 +317,13 @@
   /* Responsive speeds */
   @media (max-width: 768px) {
     .marquee-track {
-      animation: marquee-scroll 30s linear infinite;
+      animation: marquee-scroll 50s linear infinite;
     }
   }
 
   @media (max-width: 480px) {
     .marquee-track {
-      animation: marquee-scroll 25s linear infinite;
+      animation: marquee-scroll 40s linear infinite;
     }
   }
 }

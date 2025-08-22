@@ -5,41 +5,78 @@ const Partners = () => {
   const { language } = useLanguage();
 
   const partners = [
-    {
-      name: 'Triple Seven',
-      logo: '/tripleseven.png',
-      initial: 'T'
-    },
-    {
-      name: 'Over Jar',
-      logo: '/overjar.png',
-      initial: 'O'
-    },
-    {
-      name: 'Noble Chocolate',
-      logo: '/novell.jpeg',
-      initial: 'N'
-    },
-    {
-      name: 'Frykit',
-      logo: '/frykit.png',
-      initial: 'F'
-    },
-    {
-      name: 'Flowers Beach',
-      logo: '/flowersbeach.jpeg',
-      initial: 'F'
-    },
-    {
-      name: 'novellll',
-      logo: '/novel.png',
-      initial: 'N'
-    },
-    {
-      name: 'Ath',
-      logo: '/ath.png',
-      initial: 'A'
-    }
+    // First set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Second set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Third set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Fourth set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Fifth set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Sixth set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Seventh set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Eighth set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' },
+    // Ninth set
+    { logo: '/tripleseven.png', name: 'Triple Seven' },
+    { logo: '/overjar.png', name: 'Over Jar' },
+    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
+    { logo: '/frykit.png', name: 'Frykit' },
+    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
+    { logo: '/novel.png', name: 'Novel' },
+    { logo: '/ath.png', name: 'Ath' }
   ];
 
   return (
@@ -54,13 +91,10 @@ const Partners = () => {
         {/* Section Title */}
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            {language === 'ar' ? 'شركاء النجاح' : 'Trusted Partners'}
+            Partners
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {language === 'ar' 
-              ? 'شراكات استراتيجية تدفع النمو والتميز في كل مشروع'
-              : 'Strategic partnerships that drive growth and excellence in every project'
-            }
+            Trusted partnerships that drive mutual success and growth
           </p>
         </div>
 
@@ -83,7 +117,7 @@ const Partners = () => {
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
                         <span className="text-2xl md:text-3xl font-bold text-white">
-                          {partner.initial}
+                          {language === 'ar' ? partner.name.charAt(0) : partner.name.charAt(0)}
                         </span>
                       </div>
                     )}
@@ -103,7 +137,7 @@ const Partners = () => {
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
                         <span className="text-2xl md:text-3xl font-bold text-white">
-                          {partner.initial}
+                          {language === 'ar' ? partner.name.charAt(0) : partner.name.charAt(0)}
                         </span>
                       </div>
                     )}
@@ -123,7 +157,7 @@ const Partners = () => {
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
                         <span className="text-2xl md:text-3xl font-bold text-white">
-                          {partner.initial}
+                          {language === 'ar' ? partner.name.charAt(0) : partner.name.charAt(0)}
                         </span>
                       </div>
                     )}
@@ -143,10 +177,7 @@ const Partners = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-display italic text-foreground/90 leading-relaxed mb-6">
-                {language === 'ar' 
-                  ? 'النجاح مبني على الشراكات الاستراتيجية التي تدفع النمو والتميز في كل مشروع'
-                  : 'Success is built on strategic partnerships that create value for all stakeholders'
-                }
+                Success is built on strategic partnerships that create value for all stakeholders
               </blockquote>
               
               <cite className="block text-lg text-muted-foreground">
