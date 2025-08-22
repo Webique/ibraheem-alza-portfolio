@@ -287,43 +287,45 @@
     animation: slide-in-left 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
-  /* Bulletproof Marquee - 100% Guaranteed to Work */
-  .marquee-container {
+  /* Partners Marquee - Classic Approach for Both Languages */
+  .partners-marquee {
     position: relative;
     width: 100%;
     overflow: hidden;
   }
 
-  .marquee-track {
+  .partners-track {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 60s linear infinite;
+    gap: 2rem;
+    animation: partners-scroll 50s linear infinite;
   }
 
-  .marquee-item {
+  .partner-item {
     flex-shrink: 0;
-    margin: 0 1.5rem;
   }
 
-  @keyframes marquee-scroll {
+  @keyframes partners-scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-33.333%);
+      transform: translateX(-50%);
     }
   }
 
   /* Responsive speeds */
   @media (max-width: 768px) {
-    .marquee-track {
-      animation: marquee-scroll 50s linear infinite;
+    .partners-track {
+      gap: 2.5rem;
+      animation: partners-scroll 45s linear infinite;
     }
   }
 
   @media (max-width: 480px) {
-    .marquee-track {
-      animation: marquee-scroll 40s linear infinite;
+    .partners-track {
+      gap: 3rem;
+      animation: partners-scroll 40s linear infinite;
     }
   }
 }

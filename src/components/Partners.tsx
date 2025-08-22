@@ -4,72 +4,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const Partners = () => {
   const { language } = useLanguage();
 
+  // Single set of partners that will be duplicated in CSS for seamless loop
   const partners = [
-    // First set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Second set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Third set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Fourth set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Fifth set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Sixth set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Seventh set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Eighth set
-    { logo: '/tripleseven.png', name: 'Triple Seven' },
-    { logo: '/overjar.png', name: 'Over Jar' },
-    { logo: '/novell.jpeg', name: 'Noble Chocolate' },
-    { logo: '/frykit.png', name: 'Frykit' },
-    { logo: '/flowersbeach.jpeg', name: 'Flowers Beach' },
-    { logo: '/novel.png', name: 'Novel' },
-    { logo: '/ath.png', name: 'Ath' },
-    // Ninth set
     { logo: '/tripleseven.png', name: 'Triple Seven' },
     { logo: '/overjar.png', name: 'Over Jar' },
     { logo: '/novell.jpeg', name: 'Noble Chocolate' },
@@ -91,22 +27,23 @@ const Partners = () => {
         {/* Section Title */}
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Partners
+            {language === 'ar' ? 'شركاء النجاح' : 'Partners'}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Trusted partnerships that drive mutual success and growth
+            {language === 'ar' 
+              ? 'شراكات موثوقة تدفع النجاح المتبادل والنمو'
+              : 'Trusted partnerships that drive mutual success and growth'
+            }
           </p>
         </div>
 
-        {/* Seamless Infinite Marquee */}
-        <div className="relative mb-20">
-          {/* Marquee Container */}
-          <div className="marquee-container overflow-hidden">
-            {/* Single Row - Moving Right to Left */}
-            <div className="marquee-track">
-              {/* First set of partners */}
+        {/* Partners Marquee - EXACTLY THE SAME FOR BOTH LANGUAGES */}
+        <div className="mb-20 overflow-hidden">
+          <div className="partners-marquee">
+            <div className="partners-track">
+              {/* First set */}
               {partners.map((partner, index) => (
-                <div key={`first-${index}`} className="marquee-item">
+                <div key={`first-${index}`} className="partner-item">
                   <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center">
                     {partner.logo ? (
                       <img 
@@ -117,7 +54,7 @@ const Partners = () => {
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
                         <span className="text-2xl md:text-3xl font-bold text-white">
-                          {language === 'ar' ? partner.name.charAt(0) : partner.name.charAt(0)}
+                          {partner.name.charAt(0)}
                         </span>
                       </div>
                     )}
@@ -126,7 +63,7 @@ const Partners = () => {
               ))}
               {/* Second set - exact duplicate for seamless loop */}
               {partners.map((partner, index) => (
-                <div key={`second-${index}`} className="marquee-item">
+                <div key={`second-${index}`} className="partner-item">
                   <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center">
                     {partner.logo ? (
                       <img 
@@ -137,27 +74,7 @@ const Partners = () => {
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
                         <span className="text-2xl md:text-3xl font-bold text-white">
-                          {language === 'ar' ? partner.name.charAt(0) : partner.name.charAt(0)}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-              {/* Third set - for perfect seamless loop */}
-              {partners.map((partner, index) => (
-                <div key={`third-${index}`} className="marquee-item">
-                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center">
-                    {partner.logo ? (
-                      <img 
-                        src={partner.logo} 
-                        alt={`${partner.name} logo`}
-                        className="w-full h-full object-contain rounded-lg hover:scale-110 transition-transform duration-300"
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
-                        <span className="text-2xl md:text-3xl font-bold text-white">
-                          {language === 'ar' ? partner.name.charAt(0) : partner.name.charAt(0)}
+                          {partner.name.charAt(0)}
                         </span>
                       </div>
                     )}
@@ -177,7 +94,10 @@ const Partners = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-display italic text-foreground/90 leading-relaxed mb-6">
-                Success is built on strategic partnerships that create value for all stakeholders
+                {language === 'ar' 
+                  ? 'النجاح مبني على الشراكات الاستراتيجية التي تخلق قيمة لجميع الأطراف المعنية'
+                  : 'Success is built on strategic partnerships that create value for all stakeholders'
+                }
               </blockquote>
               
               <cite className="block text-lg text-muted-foreground">
