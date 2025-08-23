@@ -12,16 +12,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <p className="text-primary-foreground/60 leading-relaxed">
-              {t('footer.location')}
-            </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-6">
             <h4 className="font-semibold text-lg text-secondary">{t('footer.quickLinks')}</h4>
             <div className="grid grid-cols-2 gap-2">
-              {['#about', '#metrics', '#portfolio', '#services', '#achievements', '#contact'].map((link) => (
+              {['#about', '#metrics', '#services', '#achievements', '#contact'].map((link) => (
                 <button
                   key={link}
                   onClick={() => {
@@ -59,19 +56,6 @@ const Footer = () => {
               >
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">+966530536556</span>
-              </a>
-              
-              <a
-                href="https://snapchat.com/add/ibraheemzhrani"
-                className="flex items-center gap-3 text-primary-foreground/70 hover:text-secondary transition-colors duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center relative">
-                  <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
-                  <div className="w-1 h-1 bg-yellow-400 rounded-full absolute top-1 left-1"></div>
-                </div>
-                <span className="text-sm">ibraheemzhrani</span>
               </a>
               
               <a

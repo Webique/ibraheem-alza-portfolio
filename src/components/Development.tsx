@@ -21,7 +21,7 @@ const Development = () => {
       <div className="container-width">
         {/* Section Title */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 gradient-text">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-10 gradient-text leading-tight pb-4">
             {t('development.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

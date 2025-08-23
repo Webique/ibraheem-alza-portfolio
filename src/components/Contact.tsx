@@ -3,7 +3,7 @@ import { Mail, Phone, Linkedin, MapPin, Instagram, MessageCircle } from 'lucide-
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Contact = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section id="contact" className="section-padding bg-gradient-hero text-primary-foreground">
@@ -22,10 +22,6 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <div>
-              <h3 className="font-display text-2xl font-bold mb-6 text-secondary text-center">
-                {t('contact.info')}
-              </h3>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
@@ -55,23 +51,6 @@ const Contact = () => {
                       rel="noopener noreferrer"
                     >
                       @ibrazhrani
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                    <MessageCircle className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-primary-foreground">{t('contact.snapchat')}</p>
-                    <a 
-                      href="https://snapchat.com/add/ibraheemzhrani" 
-                      className="text-secondary hover:text-secondary-hover transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      ibraheemzhrani
                     </a>
                   </div>
                 </div>
@@ -116,7 +95,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-primary-foreground">{t('contact.location')}</p>
-                    <p className="text-primary-foreground/80">{t('contact.countries')}</p>
+                    <p className="text-primary-foreground/80">
+                      {language === 'ar' ? 'المملكة العربية السعودية ، الرياض ، أبها' : 'Kingdom of Saudi Arabia, Riyadh, Abha'}
+                    </p>
                   </div>
                 </div>
               </div>

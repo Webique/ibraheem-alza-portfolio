@@ -8,7 +8,10 @@ import {
   TrendingUp, 
   Shield, 
   Laptop,
-  ChefHat
+  ChefHat,
+  CheckCircle,
+  Monitor,
+  Search
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -42,9 +45,9 @@ const Services = () => {
       bgColor: 'bg-secondary/10',
     },
     {
-      icon: Lightbulb,
+      icon: ChefHat,
       titleAr: 'خدمة تطوير العلامات التجارية والمفاهيم',
-      titleEn: 'Brand & Concept Development',
+      titleEn: 'Brand Identity & Concept Development',
       descriptionAr: 'نبتكر أو نعيد تصميم هوية البراند بما يواكب السوق ويجذب العملاء.',
       descriptionEn: 'We craft or refresh your brand identity and concept to fit the market and attract customers.',
       pointsAr: [
@@ -67,7 +70,7 @@ const Services = () => {
       bgColor: 'bg-primary/10',
     },
     {
-      icon: Target,
+      icon: TrendingUp,
       titleAr: 'خدمة الكفاءة التشغيلية وضبط التكاليف',
       titleEn: 'Operational Efficiency & Cost Control',
       descriptionAr: 'نقلل المصروفات ونزيد الربحية دون المساس بالجودة.',
@@ -88,13 +91,13 @@ const Services = () => {
       ],
       valueAr: 'سيطرة أعلى على المصروفات وهوامش ربح أفضل.',
       valueEn: 'Greater cost control and improved profitability.',
-      color: 'text-secondary',
-      bgColor: 'bg-secondary/10',
+      color: 'text-accent',
+      bgColor: 'bg-accent/10',
     },
     {
       icon: Users,
       titleAr: 'خدمة التدريب وتطوير الفريق',
-      titleEn: 'Training & Team Development',
+      titleEn: 'Team Training & Development',
       descriptionAr: 'نُعِد برامج تدريب لبناء فرق قوية وقادرة على الأداء العالي.',
       descriptionEn: 'We design training programs that build high-performing teams.',
       pointsAr: [
@@ -113,13 +116,13 @@ const Services = () => {
       ],
       valueAr: 'استمرارية التميز وجودة الأداء على المدى الطويل.',
       valueEn: 'Sustained excellence and consistent performance.',
-      color: 'text-primary',
-      bgColor: 'bg-primary/10',
+      color: 'text-secondary',
+      bgColor: 'bg-secondary/10',
     },
     {
-      icon: Store,
+      icon: Building2,
       titleAr: 'خدمة إدارة افتتاح الفروع الجديدة',
-      titleEn: 'New Store Opening Management',
+      titleEn: 'New Branch Launch Management',
       descriptionAr: 'نُدير افتتاح الفروع من الفكرة حتى التشغيل الكامل.',
       descriptionEn: 'End-to-end launch management from planning to full operations.',
       pointsAr: [
@@ -138,13 +141,13 @@ const Services = () => {
       ],
       valueAr: 'اختصار الوقت والجهد وضمان انطلاقة ناجحة.',
       valueEn: 'Faster time-to-open and a flawless first impression.',
-      color: 'text-secondary',
-      bgColor: 'bg-secondary/10',
+      color: 'text-primary',
+      bgColor: 'bg-primary/10',
     },
     {
       icon: TrendingUp,
       titleAr: 'خدمة نمو المبيعات وتجربة العملاء',
-      titleEn: 'Sales Growth & Customer Experience',
+      titleEn: 'Sales Growth & Guest Experience',
       descriptionAr: 'نرفع المبيعات بتحليل سلوك العملاء وتحسين التجربة.',
       descriptionEn: 'We grow sales through data-driven strategies and superior experiences.',
       pointsAr: [
@@ -163,13 +166,13 @@ const Services = () => {
       ],
       valueAr: 'إيرادات أعلى وعلاقة أقوى مع العملاء.',
       valueEn: 'Higher revenue and stronger customer relationships.',
-      color: 'text-primary',
-      bgColor: 'bg-primary/10',
+      color: 'text-accent',
+      bgColor: 'bg-accent/10',
     },
     {
-      icon: Shield,
+      icon: CheckCircle,
       titleAr: 'خدمة الجودة وسلامة الغذاء',
-      titleEn: 'Quality & Food Safety Management',
+      titleEn: 'Quality & Food Safety Systems',
       descriptionAr: 'نطبق أنظمة ومعايير عالمية لضمان أعلى مستويات الجودة والسلامة.',
       descriptionEn: 'Global-standard quality and food safety systems.',
       pointsAr: [
@@ -192,7 +195,7 @@ const Services = () => {
       bgColor: 'bg-secondary/10',
     },
     {
-      icon: Laptop,
+      icon: Monitor,
       titleAr: 'خدمة التحول الرقمي والأنظمة',
       titleEn: 'Digital Transformation & Systems',
       descriptionAr: 'نُدخِل التكنولوجيا في التشغيل لرفع الكفاءة وسهولة المتابعة.',
@@ -238,9 +241,34 @@ const Services = () => {
       ],
       valueAr: 'طابع خاص للبراند، ضبط جودة، ورضا عملاء أعلى.',
       valueEn: 'Unique brand identity, tighter quality control, and happier guests.',
+      color: 'text-accent',
+      bgColor: 'bg-accent/10',
+    },
+    {
+      icon: Search,
+      titleAr: 'خدمة المتسوق الخفي',
+      titleEn: 'Mystery Shopper Service',
+      descriptionAr: 'ننفّذ زيارات سرّية للفروع لقياس تجربة الضيف على أرض الواقع واكتشاف فرص التحسين بسرعة.',
+      descriptionEn: 'We conduct discreet, in-person visits to objectively measure the real guest experience and spot improvement opportunities.',
+      pointsAr: [
+        'زيارات دورية بأوقات مختلفة (ذروة/خارج الذروة) وفق سيناريوهات محددة.',
+        'تقييم رحلة الضيف: الاستقبال، السرعة، الدقة، النظافة، جودة المنتج، المظهر، والالتزام بالسياسات.',
+        'قياس البيع الإضافي (Upselling) والتعامل مع الشكاوى والطلبات الخاصة.',
+        'نماذج تقييم مُوَحَّدة (Scorecards) مع أدلة داعمة عند الإمكان.',
+        'تقرير تنفيذي لوحة متابعة بخطة إجراءات تصحيحية (CAPA) ومسؤوليات وجدول زمني.'
+      ],
+      pointsEn: [
+        'Scheduled mystery visits at varied times (peak/off-peak) with predefined scenarios.',
+        'Full journey audit: greeting, speed, accuracy, cleanliness, product quality, appearance, and policy compliance.',
+        'Assessment of upselling, complaint handling, and special requests.',
+        'Standardized scorecards with supporting evidence where possible.',
+        'Executive report and dashboard with a corrective action plan (CAPA), owners, and timelines.'
+      ],
+      valueAr: 'رؤية محايدة لأداء الفروع، تحسين فوري للتجربة، رفع رضا الضيوف وزيادة المبيعات.',
+      valueEn: 'Unbiased performance insights, faster improvements, higher guest satisfaction, and increased sales.',
       color: 'text-secondary',
       bgColor: 'bg-secondary/10',
-    },
+    }
   ];
 
   return (

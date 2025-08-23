@@ -26,7 +26,7 @@ const Partners = () => {
       <div className="container-width relative z-10">
         {/* Section Title */}
         <div className="text-center mb-20 animate-fade-in">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 gradient-text">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-10 gradient-text leading-tight pb-4">
             {language === 'ar' ? 'شركاء النجاح' : 'Partners'}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

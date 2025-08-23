@@ -34,7 +34,7 @@ const translations = {
     
     // About Section
     'about.title': 'About Us',
-    'about.description': 'We believe that the success of any project starts with smart operations, a strong brand identity, and a customer experience that lasts.\n\nWe help business owners transform ideas into leading brands through integrated solutions, including:\n\n• Building strong operational structures\n• Developing signature recipes and unique products\n• Designing strategies for growth and expansion\n• Ensuring the highest standards of quality and food safety\n\nOur journey began with a passion for the F&B sector and has expanded into retail, entertainment, and real estate. Today, we work with our clients as true partners, leveraging our expertise to create businesses that are more efficient, profitable, and sustainable.',
+    'about.description': 'We believe that the success of any project starts with smart operations, a strong brand identity, and a customer experience that lasts.\n\nWe help business owners transform ideas into leading brands through integrated solutions, including:\n\n• Building strong operational structures\n• Developing signature recipes and unique products\n• Designing strategies for growth and expansion\n• Ensuring the highest standards of quality and food safety\n• Mystery Shopper Service\n\nOur journey began with a passion for the F&B sector and has expanded into retail, entertainment, and real estate. Today, we work with our clients as true partners, leveraging our expertise to create businesses that are more efficient, profitable, and sustainable.',
     'about.sectors': 'Sectors: F&B, retail, entertainment, real estate',
     'about.philosophy': 'Our Values: Passion • Partnership • Quality • Innovation',
     'about.years': 'Years Experience',
@@ -124,7 +124,7 @@ const translations = {
     
     // Development
     'development.title': 'Professional Development',
-    'development.list': 'Leadership, TOT, Financial Accounting, ISO 9001 Quality Management, Emotional Intelligence, Project Planning, Report Writing, Time Management.',
+    'development.list': 'Leadership, TOT, Financial Accounting, ISO 9001 Quality Management, Emotional Intelligence, Project Planning, Report Writing, Time Management, Mystery Shopper Service.',
     'development.description': 'Continuous learning and professional growth across core competencies',
     'development.leadership': 'Leadership',
     'development.tot': 'TOT',
@@ -173,7 +173,7 @@ const translations = {
     
     // About Section
     'about.title': 'من نحن',
-    'about.description': 'نحن فريق يؤمن أن نجاح أي مشروع يبدأ من التشغيل الذكي، والهوية القوية، والتجربة التي تبقى في ذاكرة العملاء.\n\nنساعد أصحاب الأعمال على تحويل أفكارهم إلى علامات تجارية رائدة عبر حلول متكاملة تشمل:\n\n• بناء الهياكل التشغيلية القوية\n• تطوير الوصفات والمنتجات المميزة\n• صياغة استراتيجيات النمو والانتشار\n• ضمان أعلى معايير الجودة وسلامة الغذاء\n\nقصتنا بدأت بشغف في عالم الأغذية والمشروبات، وتطورت لتشمل التجزئة والترفيه والعقارات. اليوم، نعمل مع عملائنا كشركاء حقيقيين في النجاح، حيث نضع خبرتنا بين أيديهم لخلق أعمال أكثر كفاءة وربحية واستدامة.',
+    'about.description': 'نحن فريق يؤمن أن نجاح أي مشروع يبدأ من التشغيل الذكي، والهوية القوية، والتجربة التي تبقى في ذاكرة العملاء.\n\nنساعد أصحاب الأعمال على تحويل أفكارهم إلى علامات تجارية رائدة عبر حلول متكاملة تشمل:\n\n• بناء الهياكل التشغيلية القوية\n• تطوير الوصفات والمنتجات المميزة\n• صياغة استراتيجيات النمو والانتشار\n• ضمان أعلى معايير الجودة وسلامة الغذاء\n• خدمة المشتري الغير متوقع\n\nقصتنا بدأت بشغف في عالم الأغذية والمشروبات، وتطورت لتشمل التجزئة والترفيه والعقارات. اليوم، نعمل مع عملائنا كشركاء حقيقيين في النجاح، حيث نضع خبرتنا بين أيديهم لخلق أعمال أكثر كفاءة وربحية واستدامة.',
     'about.sectors': 'القطاعات: الأغذية والمشروبات، التجزئة، الترفيه، العقارات',
     'about.philosophy': 'قيمنا: الشغف • الشراكة • الجودة • الابتكار',
     'about.years': 'سنوات خبرة',
@@ -263,7 +263,7 @@ const translations = {
     
     // Development
     'development.title': 'التطوير المهني',
-    'development.list': 'القيادة والإدارة، تدريب المدربين، المحاسبة المالية، نظام الجودة ISO 9001، الذكاء العاطفي، تخطيط المشاريع، كتابة التقارير، إدارة الوقت.',
+    'development.list': 'القيادة والإدارة، تدريب المدربين، المحاسبة المالية، نظام الجودة ISO 9001، الذكاء العاطفي، تخطيط المشاريع، كتابة التقارير، إدارة الوقت، خدمة المتسوق الخفي.',
     'development.description': 'التعلم المستمر والنمو المهني عبر الكفاءات الأساسية',
     'development.leadership': 'القيادة',
     'development.tot': 'تدريب المدربين',
