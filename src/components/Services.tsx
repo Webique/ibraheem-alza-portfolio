@@ -343,14 +343,14 @@ const Services = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <div className="card-premium p-8 md:p-12 max-w-3xl mx-auto">
-            <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 gradient-text">
+          <div className="card-premium p-8 md:p-12 bg-gradient-hero text-primary-foreground max-w-3xl mx-auto">
+            <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 text-secondary">
               {language === 'ar' 
                 ? 'هل أنت مستعد لتحسين عملياتك؟'
-                : 'Ready to optimize your operations?'
+                : 'Are you ready to improve your operations?'
               }
             </h3>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-primary-foreground/80 mb-6">
               {language === 'ar'
                 ? 'دعنا نناقش كيف يمكننا دفع الكفاءة والنمو في عملك.'
                 : 'Let\'s discuss how we can drive efficiency and growth in your business.'
@@ -363,7 +363,7 @@ const Services = () => {
                   contactSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="btn-gold px-8 py-3 font-semibold"
+              className="bg-secondary text-premium-black px-8 py-3 rounded-full font-semibold hover:bg-secondary/80 transition-colors duration-300 hover-lift"
             >
               {language === 'ar' ? 'تواصل معي' : 'Contact Me'}
             </button>
