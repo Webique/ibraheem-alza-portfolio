@@ -101,10 +101,6 @@ const Partners: React.FC = () => {
             </div>
             
             <div className="relative z-10 text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-8">
-                <span className="text-4xl">🤝</span>
-              </div>
-              
               <blockquote className="text-2xl md:text-4xl font-display italic text-foreground/90 leading-relaxed mb-8">
                 {language === 'ar' 
                   ? 'النجاح مبني على الشراكات الاستراتيجية التي تخلق قيمة لجميع الأطراف المعنية'
