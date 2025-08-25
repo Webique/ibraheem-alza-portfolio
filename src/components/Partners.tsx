@@ -89,10 +89,6 @@ const Partners = () => {
         <div className="text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-secondary/10 via-primary/10 to-secondary/10 rounded-3xl p-8 md:p-12 border border-white/20 backdrop-blur-sm">
-              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl text-white">🤝</span>
-              </div>
-              
               <blockquote className="text-2xl md:text-3xl font-display italic text-foreground/90 leading-relaxed mb-6">
                 {language === 'ar' 
                   ? 'النجاح مبني على الشراكات الاستراتيجية التي تخلق قيمة لجميع الأطراف المعنية'
