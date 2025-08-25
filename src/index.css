@@ -287,25 +287,67 @@
     animation: slide-in-left 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
-  /* Partners Marquee - Classic Approach for Both Languages */
-  .partners-marquee {
-    position: relative;
+    /* Simple CSS Marquee - Actually Moves */
+  /* All marquee functionality now handled by pure CSS */
+  
+  /* Enhanced Partner Section Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Smooth hover transitions for partner logos */
+  .group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+  }
+  
+  .group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+  }
+  
+  /* Enhanced backdrop blur effects */
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  /* Smooth shadow transitions */
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Simple Working CSS Marquee */
+  .marquee-wrapper {
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
-
-  .partners-track {
+  
+  .marquee-content {
     display: flex;
     width: max-content;
-    gap: 2rem;
-    animation: partners-scroll 50s linear infinite;
+    animation: marquee-scroll 30s linear infinite;
+    will-change: transform;
   }
-
-  .partner-item {
+  
+  .marquee-item {
     flex-shrink: 0;
+    margin: 0 1.5rem;
   }
-
-  @keyframes partners-scroll {
+  
+  @keyframes marquee-scroll {
     0% {
       transform: translateX(0);
     }
@@ -313,19 +355,34 @@
       transform: translateX(-50%);
     }
   }
-
-  /* Responsive speeds */
-  @media (max-width: 768px) {
-    .partners-track {
-      gap: 2.5rem;
-      animation: partners-scroll 45s linear infinite;
+  
+  /* Keep marquee LTR inside RTL pages so animation math stays correct */
+  [dir="rtl"] .marquee-wrapper,
+  [dir="rtl"] .marquee-content {
+    direction: ltr !important;
+  }
+  
+  /* Desktop-specific fix for seamless looping */
+  @media (min-width: 769px) {
+    .marquee-content {
+      animation: marquee-scroll 35s linear infinite;
+    }
+    
+    .marquee-item {
+      margin: 0 2rem;
     }
   }
-
+  
+  /* Responsive speeds */
+  @media (max-width: 768px) {
+    .marquee-content {
+      animation: marquee-scroll 25s linear infinite;
+    }
+  }
+  
   @media (max-width: 480px) {
-    .partners-track {
-      gap: 3rem;
-      animation: partners-scroll 40s linear infinite;
+    .marquee-content {
+      animation: marquee-scroll 20s linear infinite;
     }
   }
 }
