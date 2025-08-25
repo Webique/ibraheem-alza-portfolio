@@ -108,12 +108,9 @@ const Partners: React.FC = () => {
                 }
               </blockquote>
               
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                {language === 'ar' 
-                  ? 'نؤمن بقوة التعاون والشراكات المستدامة التي تدفع الابتكار والنمو'
-                  : 'We believe in the power of collaboration and sustainable partnerships that drive innovation and growth'
-                }
-              </p>
+              <cite className="text-lg md:text-xl text-muted-foreground font-medium">
+                — Ibraheem Alzahrani
+              </cite>
             </div>
           </div>
         </div>
